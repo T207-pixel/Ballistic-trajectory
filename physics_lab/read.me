@@ -1,7 +1,17 @@
-# Movement of a body thrown with angle to the horizontal, taking in account resistance of air.
-# Input parameters: speed, angle, resistance, mass.
-# Make beautiful otput - graphics x(t), y(t), y(x).
+# Movement of a body thrown with an angle to the horizontal, taking in account resistance of air, also resistance of air may be setted as zero.
+
+# Input parameters: speed, angle, resistance (coefficient), mass (is needed only if resistance is not zero).
+
+# Project made with two types of formulas. First type is usual formulas without resistance. Second type it is formulas with resistance wich is solved with # linear differential equations. With fronend it is possible to get graphics of flight length versus time, flight height versus time and flight height 
+# versus flight length. User can get graphics taking into account resistance or without it. Animation of flying point is also provided. 
+
+# Program has a safe input.
+
+# For this project were used two extra libraries: NumPy and Plotly.
+# NumPy is an open source project aiming to enable numerical computing with Python. 
+# Plotly's Python graphing library makes interactive, publication-quality graphs.
+# You may install both libraries with a command "pip insatall name_of_lib"
+
 #___Downsides___#
-# No input check.
-# No Qt for input.
-# Animation of flying point has wrong speed.
+# No Qt for input buttons.
+
